@@ -4,4 +4,50 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background-color: #273043;
+}
 
+.form-container {
+    background-color: #9197AE;
+    height: 20vh;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+.movie-name-input {
+    display: inline-block;
+    height: 40px;
+    width: 20%;
+    border: 1px solid #fff;
+    padding-left: 1%;
+    color: #9197AE;
+    border-radius: 25px;
+}
+#search-movie-btn {
+    height: 40px;
+    width: 5%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #273043;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+#search-movie-btn:hover {
+    background-color: #273043;
+    opacity: .8;
+}
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/*Movie COntainer*/
+
+.movie-container h2 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}

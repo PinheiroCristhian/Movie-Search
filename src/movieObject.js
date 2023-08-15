@@ -1,4 +1,6 @@
-function Movie(title, overview, language, releaseDate, posterImage, backgroundImage, userScore) {
+const movieList = [];
+
+function MovieFactory(title, overview, language, releaseDate, posterImage, backgroundImage, userScore) {
 
     return {
         getMovieTitle: () => title,
@@ -10,3 +12,5 @@ function Movie(title, overview, language, releaseDate, posterImage, backgroundIm
         getMovieUserScore: () => userScore
     }
 }
+
+export { movieList, MovieFactory }
