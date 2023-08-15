@@ -1,0 +1,1 @@
+(()=>{"use strict";function e(){const e=document.querySelector(".movie-name-input"),t=document.querySelector("#search-movie-btn");return{movieNameInput:()=>e,searchBtn:()=>t}}document.addEventListener("DOMContentLoaded",(function(){e().searchBtn().addEventListener("click",(()=>{const t=e().movieNameInput().value.trim();t&&console.log(t)}))}))})();
