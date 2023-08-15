@@ -1,7 +1,6 @@
 import { apiKey } from "./apiKey.js";
 
 export async function searchForMovie(movieName) {
-    console.log('AṔI CALL HERE');
     const key = apiKey();
     
     try { //if everything goes ok, it'll be executed here

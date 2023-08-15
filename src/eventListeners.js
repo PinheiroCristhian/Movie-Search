@@ -1,6 +1,6 @@
 import { searchForMovie } from "./api.js";
 import { DomElements } from "./domElements.js";
-import { findMovies, renderMovies } from "./utils.js";
+import { findMovies, renderMovies, clearScreen } from "./utils.js";
 import { movieList } from "./movieObject.js";
 
 export function searchMovieListener() {
@@ -14,11 +14,14 @@ export function searchMovieListener() {
 
         //If there's some text, this code will be executed
         const movie = await searchForMovie(movieNameValue); //Loading a promise
-        console.log(`We're in the searchMovieListener`)
+ 
         findMovies(movie.results);
-        console.log(`We've passed the findMOvies`)
+        clearScreen();
+        let i = 1;
+        console.log(`Vez ${i}: ${movieList} `);
+        i++
         renderMovies(movieList);
-        console.log(`We're executing the renderMovies`);
+
         
     })
     
